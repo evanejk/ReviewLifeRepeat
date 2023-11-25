@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListPastReviewsActivity">
+
+    <Button
+        android:id="@+id/buttonPreviousFile"
+        android:layout_width="150dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/previous_file"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/file_name_goes_here"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextFileText"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSaveFile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFileName" />
+
+    <Button
+        android:id="@+id/buttonDeleteFile"
+        android:layout_width="150dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/delete"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPreviousFile"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonNextFile"
+        android:layout_width="150dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/next_file"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSaveFile"
+        android:layout_width="150dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNextFile"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
