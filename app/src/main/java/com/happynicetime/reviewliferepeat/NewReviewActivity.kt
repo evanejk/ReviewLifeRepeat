@@ -44,7 +44,7 @@ class NewReviewActivity : AppCompatActivity() {
                     val fileSuffix: String = SimpleDateFormat("yyyyMMddHHmmss").format(Date())
                     println(fileSuffix)
                     val filePathMadeAsString = writeFileOnInternalStorage(applicationContext,"reviews/" + fileSuffix + ".txt",saveStringBuilder.toString())
-                    val toast = Toast.makeText(this, filePathMadeAsString, Toast.LENGTH_LONG)
+                    val toast = Toast.makeText(this, filePathMadeAsString, Toast.LENGTH_SHORT)
                     toast.show()
 
                     currentQuestionIndex = 0;

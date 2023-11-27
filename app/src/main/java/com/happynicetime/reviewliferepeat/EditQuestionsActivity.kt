@@ -19,7 +19,7 @@ class EditQuestionsActivity : AppCompatActivity() {
         buttonSave.setOnClickListener{
             //println("time to save questions")
             val filePathMadeAsString = writeFileOnInternalStorage(applicationContext,"questions.txt",editText.getText().toString())
-            val toast = Toast.makeText(this, filePathMadeAsString, Toast.LENGTH_LONG)
+            val toast = Toast.makeText(this, filePathMadeAsString, Toast.LENGTH_SHORT)
             toast.show()
             val intent: Intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
