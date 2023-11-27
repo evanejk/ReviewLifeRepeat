@@ -112,6 +112,7 @@ class ListPastReviewsActivity : AppCompatActivity() {
                     toast.show()
                     val intent: Intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
+                    finish()
                 }
 
                 buttonDeleteFile.setText("Delete")
