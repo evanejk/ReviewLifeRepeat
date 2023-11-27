@@ -29,13 +29,13 @@ class MainActivity : AppCompatActivity() {
             val intent: Intent = Intent(this,ListPastReviewsActivity::class.java)
             startActivity(intent)
         }
-        val back = this.onBackPressedDispatcher
-        back.addCallback(this, object : OnBackPressedCallback(true){
-            override fun handleOnBackPressed() {
+        //val back = this.onBackPressedDispatcher
+        //back.addCallback(this, object : OnBackPressedCallback(true){
+        //    override fun handleOnBackPressed() {
                 //println("back pressed")
                 //do nothing instead of glitching into a previous activity
-            }
-        })
+        //    }
+        //})
 
     }
 }
