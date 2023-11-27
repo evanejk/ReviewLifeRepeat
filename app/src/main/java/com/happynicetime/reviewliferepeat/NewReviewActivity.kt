@@ -42,12 +42,12 @@ class NewReviewActivity : AppCompatActivity() {
                     }
                     //println(saveStringBuilder.toString())
                     val fileSuffix: String = SimpleDateFormat("yyyyMMddHHmmss").format(Date())
-                    println(fileSuffix)
+                    //println(fileSuffix)
                     val filePathMadeAsString = writeFileOnInternalStorage(applicationContext,"reviews/" + fileSuffix + ".txt",saveStringBuilder.toString())
                     val toast = Toast.makeText(this, filePathMadeAsString, Toast.LENGTH_SHORT)
                     toast.show()
 
-                    currentQuestionIndex = 0;
+                    currentQuestionIndex = 0
                     var intent: Intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                 }else{
