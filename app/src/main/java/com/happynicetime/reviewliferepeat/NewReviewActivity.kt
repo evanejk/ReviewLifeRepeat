@@ -48,8 +48,8 @@ class NewReviewActivity : AppCompatActivity() {
                     toast.show()
 
                     currentQuestionIndex = 0
-                    var intent: Intent = Intent(this, MainActivity::class.java)
-                    startActivity(intent)
+                    //var intent: Intent = Intent(this, MainActivity::class.java)
+                    //startActivity(intent)
                     finish()
                 }else{
                     //save the response in a variable (array)

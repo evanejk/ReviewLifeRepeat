@@ -21,8 +21,9 @@ class EditQuestionsActivity : AppCompatActivity() {
             val filePathMadeAsString = writeFileOnInternalStorage(applicationContext,"questions.txt",editText.getText().toString())
             val toast = Toast.makeText(this, filePathMadeAsString, Toast.LENGTH_SHORT)
             toast.show()
-            val intent: Intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            //val intent: Intent = Intent(this, MainActivity::class.java)
+            //startActivity(intent)
+            finish()
         }
     }
 }
