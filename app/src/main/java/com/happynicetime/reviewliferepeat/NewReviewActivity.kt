@@ -81,6 +81,9 @@ class NewReviewActivity : AppCompatActivity() {
                     //save response in variable
                     responsesArray[currentQuestionIndex] = editTextResponse.getText().toString()
                     //switch to response before
+                    if(/*the before*/currentQuestionIndex == questionsArray.size - 1/*last one*/){
+                        buttonNext.setText(R.string.next)//change the save button back to a next button
+                    }
                     currentQuestionIndex--
                     textViewQuestion.setText(questionsArray[currentQuestionIndex])
                     editTextResponse.setText(responsesArray[currentQuestionIndex])
