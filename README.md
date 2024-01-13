@@ -4,7 +4,8 @@ First tap on "Edit Questions" and fill out your questions one per line like so
 
 Rate your mood:
 Rate your pain:
-What is the best thing that happened so far today?
+What is the best thing that happened today?
+What did you eat?
 Goals:
 Notes:
 
