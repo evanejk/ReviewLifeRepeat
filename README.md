@@ -3,11 +3,17 @@ android app in Kotlin for reviewing your life
 First tap on "Edit Questions" and fill out your questions one per line like so
 
 Rate your mood:
+
 Rate your pain:
+
 What is the best thing that happened today?
+
 What did you eat?
+
 Goals:
+
 Notes:
+
 
 Next tap on Save
 
