@@ -4,12 +4,12 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import androidx.activity.OnBackPressedCallback
 
 class MainActivity : AppCompatActivity() {
     private lateinit var buttonEditQuestions: Button
     private lateinit var buttonNewReview: Button
     private lateinit var buttonListPastReviews: Button
+    private lateinit var buttonPrintReviews: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -27,6 +27,11 @@ class MainActivity : AppCompatActivity() {
         buttonListPastReviews = findViewById(R.id.buttonPastReviews)
         buttonListPastReviews.setOnClickListener{
             val intent: Intent = Intent(this,ListPastReviewsActivity::class.java)
+            startActivity(intent)
+        }
+        buttonPrintReviews = findViewById(R.id.buttonPrintReviews)
+        buttonPrintReviews.setOnClickListener {
+            val intent = Intent(this,PrintReviewsActivity::class.java)
             startActivity(intent)
         }
         //val back = this.onBackPressedDispatcher

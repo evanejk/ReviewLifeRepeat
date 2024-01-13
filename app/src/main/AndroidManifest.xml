@@ -16,6 +16,9 @@
         android:theme="@style/Theme.ReviewLifeRepeat"
         tools:targetApi="31">
         <activity
+            android:name=".PrintReviewsActivity"
+            android:exported="false" />
+        <activity
             android:name=".ListPastReviewsActivity"
             android:exported="false" />
         <activity

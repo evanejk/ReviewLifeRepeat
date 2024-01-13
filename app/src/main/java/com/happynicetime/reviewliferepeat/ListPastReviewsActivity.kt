@@ -26,16 +26,12 @@ class ListPastReviewsActivity : AppCompatActivity() {
         if(!dir.exists()){
             val toast = Toast.makeText(this, "No Reviews To Show", Toast.LENGTH_LONG)
             toast.show()
-            val intent: Intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
             finish()
         }
         var files = dir.listFiles()
         if (files.isEmpty()) {
             val toast = Toast.makeText(this, "No Reviews To Show", Toast.LENGTH_LONG)
             toast.show()
-            val intent: Intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
             finish()
         }
         Arrays.sort(files)
@@ -51,7 +47,7 @@ class ListPastReviewsActivity : AppCompatActivity() {
         editTextFileText.setText(fileString)
         buttonPreviousFile = findViewById(R.id.buttonPreviousFile)
         var currentFileIndex = 0;
-        buttonDeleteFile = findViewById(R.id.buttonDeleteFile)
+        buttonDeleteFile = findViewById(R.id.buttonDeleteReview)
         buttonPreviousFile.setOnClickListener {
             currentFileIndex++
             if (currentFileIndex < files.size) {
@@ -77,7 +73,7 @@ class ListPastReviewsActivity : AppCompatActivity() {
                 currentFileIndex++;
             }
         }
-        buttonSaveFile = findViewById(R.id.buttonSaveFile)
+        buttonSaveFile = findViewById(R.id.buttonSaveReview)
         buttonSaveFile.setOnClickListener {
             file = files[currentFileIndex]
             var filePathMadeAsString =
@@ -110,8 +106,6 @@ class ListPastReviewsActivity : AppCompatActivity() {
                     val toast =
                         Toast.makeText(this, "No Reviews To Show", Toast.LENGTH_LONG)
                     toast.show()
-                    val intent: Intent = Intent(this, MainActivity::class.java)
-                    startActivity(intent)
                     finish()
                 }
 
