@@ -18,6 +18,7 @@ Notes:
 Next tap on Save
 
 Now tap on "New Review" and answer your preset questions
+
 Use the Next button and at the end tap on Save
 
 To see past reviews, edit and save past reviews, or to delete past reviews tap on "Past Reviews"
