@@ -116,7 +116,7 @@ class PrintReviewsActivity : AppCompatActivity() {
             }
         }
         printMe.append("</body></html>")
-        println(printMe)
+        //println(printMe)
         val webView = WebView(this.applicationContext)
         webView.webViewClient = object : WebViewClient() {
 
